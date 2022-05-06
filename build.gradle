@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'WorkshopAutomation'
+
+version '1.0-Snapshot'
+
+sourceCompatibility = 13
+
+repositories {
+    mavenCentral()
+}
+
+//tasks.withType(Test) {
+//    scanForTestClasses = false
+//    include "**/*Test.class" // whatever Ant pattern matches your test class files
+//}
+
+dependencies {
+
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.2'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.0'
+    implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.7'//genera los reportes con cucumber
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}

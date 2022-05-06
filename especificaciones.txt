@@ -1,0 +1,38 @@
+Requirements
+
+1. Browser Language: English
+2. Browser: Chrome v101
+3. Chromedriver (for chrome v 101)
+4. Java JDK 15
+5. Gradle
+
+Dependencias para archivo build.gradle: 
+
+- implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.2' 
+- implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0' 
+- testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.0' 
+
+Comandos Gradle 
+
+- gradle clean 
+- gradle build 
+
+Extensiones para configurar cucumber, Java desde visual studio code: 
+
+- Cucumber (Gherkin) Full Support 
+- Snippets and Syntax Highlight for Gherkin (Cucumber) 
+- Extension Pack for Java v0.22.0
+- Gradle for Java 3.12.0
+
+
+
+
+
+
+
+
+
+
+
+
+
